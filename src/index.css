@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Sora", system-ui, sans-serif;
+
+  --color-ink: #0b0d12;
+  --color-ink-soft: #12151d;
+  --color-panel: #171b26;
+  --color-line: #262b38;
+
+  --color-bitcoin: #f47f17;
+  --color-bitcoin-light: #ffa552;
+  --color-bitcoin-dark: #c7630a;
+
+  --color-cream: #fff7ee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-ink);
+  color: #eef1f6;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-bitcoin);
+  color: #0b0d12;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ink);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-bitcoin);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #ffb45c, #f47f17 55%, #ffdca6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid-glow {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(244, 127, 23, 0.16), transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(244, 127, 23, 0.10), transparent 40%),
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: auto, auto, 42px 42px, 42px 42px;
+}
+
+.btc-spin {
+  animation: btc-spin 14s linear infinite;
+}
+@keyframes btc-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.coin-float {
+  animation: coin-float 6s ease-in-out infinite;
+}
+@keyframes coin-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}

@@ -1,0 +1,76 @@
+export const events = [
+  {
+    title: 'Bitcoin Day',
+    date: '31 mai 2025',
+    time: '14h00 GMT',
+    place: 'IPNET Togo',
+    theme: 'Bitcoin pour les devs & informaticiens',
+    description:
+      "Une rencontre dédiée aux développeurs et informaticiens togolais pour explorer le fonctionnement technique du Bitcoin et ses opportunités.",
+  },
+  {
+    title: 'Bitcoin Pizza Day',
+    date: '22 mai 2025',
+    time: null,
+    place: 'Lomé',
+    theme: 'Célébration historique',
+    description:
+      "Célébration d'un moment historique du Bitcoin, entre partage, pédagogie et bonne humeur au sein de la communauté.",
+  },
+  {
+    title: 'Formation « Pourquoi le Bitcoin ? »',
+    date: '14 juin 2025',
+    time: null,
+    place: 'En partenariat avec Trezor Academy',
+    theme: 'Formation & sensibilisation',
+    description:
+      "Séance de formation avec les membres de la communauté, en partenariat avec Trezor Academy — un échange passionnant sur ce sujet fondamental.",
+  },
+]
+
+export const pillars = [
+  {
+    title: 'Éducation',
+    description: 'Apprendre les fondamentaux du Bitcoin et de la blockchain, à votre rythme et en français.',
+  },
+  {
+    title: 'Sécurité',
+    description: 'Protéger ses fonds, reconnaître les arnaques et adopter les bonnes pratiques de cybersécurité.',
+  },
+  {
+    title: 'Événements',
+    description: 'Meetups, formations et webinaires pour échanger avec la communauté togolaise du Bitcoin.',
+  },
+  {
+    title: 'Opportunités',
+    description: "Explorer le potentiel d'investissement et de développement économique lié au Bitcoin.",
+  },
+]
+
+export const offerings = [
+  {
+    title: 'Sécuriser et gérer ses Bitcoins',
+    description: "Stockage des portefeuilles, bonnes pratiques et cybersécurité pour garder le contrôle total de ses fonds.",
+  },
+  {
+    title: 'Investir intelligemment dans le Bitcoin',
+    description: "Comprendre la volatilité, construire une stratégie et investir avec discipline sur le long terme.",
+  },
+  {
+    title: 'Indépendance financière avec Bitcoin',
+    description: "Utiliser l'éducation Bitcoin comme levier vers plus d'autonomie et de liberté financière.",
+  },
+]
+
+export const values = [
+  {
+    title: 'Responsabilité',
+    description: 'Fiabilité, livraison ponctuelle et communication transparente envers chaque membre de la communauté.',
+  },
+  {
+    title: 'Solidarité',
+    description: 'Bienveillance, humilité et traitement respectueux entre tous les membres, sans exception.',
+  },
+]
+
+export const whatsappLink = '#contact'
