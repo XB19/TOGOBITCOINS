@@ -14,7 +14,7 @@ import {
   FaMapMarkerAlt,
 } from 'react-icons/fa'
 import Reveal from '../components/Reveal'
-import { events, pillars, offerings, whatsappLink } from '../data/content'
+import { events, pillars, offerings, partners, whatsappLink } from '../data/content'
 import communityPhones from '../assets/community-phones.jpg'
 import communitySpeaker from '../assets/bitcoin-mastermind-presentation.jpg'
 import xBanner from '../assets/x-banner.jpg'
@@ -25,8 +25,6 @@ import devMeetup from '../assets/dev-meetup.jpg'
 
 const pillarIcons = [FaGraduationCap, FaShieldAlt, FaCalendarAlt, FaChartLine]
 const offeringIcons = [FaWallet, FaChartLine, FaUnlockAlt]
-
-const partners = ['Trezor Academy']
 
 const gallery = [
   { src: africaBitcoinDay, alt: 'Africa Bitcoin Day — premier Bitcoin Festival togolais' },
@@ -287,17 +285,21 @@ export default function Home() {
             ))}
           </div>
 
-          <Reveal delay={0.2} className="mt-14 text-center">
-            <p className="text-xs font-semibold uppercase tracking-widest text-gray-400">Ils nous accompagnent</p>
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
-              {partners.map((partner) => (
-                <span
-                  key={partner}
-                  className="inline-block rounded-full border border-gray-200 bg-gray-50 px-6 py-3 text-sm font-medium text-gray-600 transition-all duration-300 hover:-translate-y-1 hover:border-bitcoin/50 hover:text-ink"
-                >
-                  {partner}
-                </span>
-              ))}
+          <Reveal delay={0.2} className="mt-16">
+            <p className="text-center text-xs font-semibold uppercase tracking-widest text-gray-400">
+              Ils nous accompagnent
+            </p>
+            <div className="relative mt-7 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+              <div className="animate-marquee flex w-max items-center gap-14">
+                {[...partners, ...partners].map((partner, i) => (
+                  <img
+                    key={i}
+                    src={partner.logo}
+                    alt={partner.name}
+                    className="h-14 w-auto flex-none object-contain grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100"
+                  />
+                ))}
+              </div>
             </div>
           </Reveal>
         </div>

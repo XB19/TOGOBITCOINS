@@ -8,6 +8,18 @@ import imgDevMeetup from '../assets/dev-meetup.jpg'
 import imgSatOnTheRoad from '../assets/sat-on-the-road.jpg'
 import imgPizzaDay from '../assets/community-cake.jpg'
 
+import logoAfricaBlockchain from '../assets/partners/africa-blockchain.png'
+import logoAfricaBitcoinConference from '../assets/partners/africa-bitcoin-conference.png'
+import logoFedi from '../assets/partners/fedi.png'
+import logoKisaw from '../assets/partners/kisaw.png'
+
+export const partners = [
+  { name: 'Africa Blockchain Community', logo: logoAfricaBlockchain },
+  { name: 'Africa Bitcoin Conference', logo: logoAfricaBitcoinConference },
+  { name: 'Fedi', logo: logoFedi },
+  { name: 'Kisaw', logo: logoKisaw },
+]
+
 export const events = [
   {
     title: 'Formation gratuite Bitcoin — Vague 3',
