@@ -11,7 +11,8 @@
     "admin:server": "node server/index.js",
     "admin:client": "npm --prefix admin run dev",
     "admin:install": "npm --prefix admin install",
-    "admin": "concurrently -n server,admin -c blue,yellow \"npm run admin:server\" \"npm run admin:client\""
+    "admin": "concurrently -n server,admin -c blue,yellow \"npm run admin:server\" \"npm run admin:client\"",
+    "start": "concurrently -n site,server,admin -c green,blue,yellow \"npm run dev\" \"npm run admin:server\" \"npm run admin:client\""
   },
   "dependencies": {
     "framer-motion": "^13.1.1",

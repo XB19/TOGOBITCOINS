@@ -27,12 +27,20 @@ code : il écrit directement dans ces fichiers, sans base de données — le sit
 
 ```bash
 npm run admin:install   # installe les dépendances du tableau de bord (une seule fois)
-npm run admin           # démarre le serveur (API) + l'interface d'admin ensemble
+npm run start            # démarre le site + le serveur (API) + l'admin, tous ensemble
 ```
 
-Ouvrez [http://localhost:5175](http://localhost:5175). Le mot de passe est généré
-automatiquement au premier lancement et affiché dans le terminal (aussi enregistré dans
-`server/.admin-password`, non versionné) — vous pouvez le changer depuis le tableau de bord.
+Tout est servi depuis la même adresse :
+
+- Site : [http://localhost:5173](http://localhost:5173)
+- Admin : [http://localhost:5173/admin](http://localhost:5173/admin)
+
+Le mot de passe est généré automatiquement au premier lancement et affiché dans le
+terminal (aussi enregistré dans `server/.admin-password`, non versionné) — vous pouvez
+le changer depuis le tableau de bord une fois connecté.
+
+(`npm run dev` seul ne démarre que le site, sans l'admin ; `npm run admin` seul ne
+démarre que l'admin, accessible alors sur son propre port `5175`.)
 
 **Publier vos changements :** une fois vos modifications faites dans le tableau de bord,
 elles sont déjà enregistrées sur disque. Il reste à les envoyer sur GitHub pour que
