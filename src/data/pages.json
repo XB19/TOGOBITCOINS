@@ -1,42 +1,51 @@
 {
   "pillars": [
     {
+      "id": "education",
       "title": "Éducation",
       "description": "Apprendre les fondamentaux du Bitcoin et de la blockchain, à votre rythme et en français."
     },
     {
+      "id": "securite",
       "title": "Sécurité",
       "description": "Protéger ses fonds, reconnaître les arnaques et adopter les bonnes pratiques de cybersécurité."
     },
     {
+      "id": "evenements",
       "title": "Événements",
       "description": "Meetups, formations et webinaires pour échanger avec la communauté togolaise du Bitcoin."
     },
     {
+      "id": "opportunites",
       "title": "Opportunités",
       "description": "Explorer le potentiel d'investissement et de développement économique lié au Bitcoin."
     }
   ],
   "offerings": [
     {
+      "id": "securiser-et-gerer-ses-bitcoins",
       "title": "Sécuriser et gérer ses Bitcoins",
       "description": "Stockage des portefeuilles, bonnes pratiques et cybersécurité pour garder le contrôle total de ses fonds."
     },
     {
+      "id": "investir-intelligemment-dans-le-bitcoin",
       "title": "Investir intelligemment dans le Bitcoin",
       "description": "Comprendre la volatilité, construire une stratégie et investir avec discipline sur le long terme."
     },
     {
+      "id": "independance-financiere-avec-bitcoin",
       "title": "Indépendance financière avec Bitcoin",
       "description": "Utiliser l'éducation Bitcoin comme levier vers plus d'autonomie et de liberté financière."
     }
   ],
   "values": [
     {
+      "id": "responsabilite",
       "title": "Responsabilité",
       "description": "Fiabilité, livraison ponctuelle et communication transparente envers chaque membre de la communauté."
     },
     {
+      "id": "solidarite",
       "title": "Solidarité",
       "description": "Bienveillance, humilité et traitement respectueux entre tous les membres, sans exception."
     }

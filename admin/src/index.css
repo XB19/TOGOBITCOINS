@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Sora", system-ui, sans-serif;
+
+  --color-ink: #0b0d12;
+  --color-ink-soft: #12151d;
+  --color-panel: #171b26;
+  --color-line: #262b38;
+
+  --color-bitcoin: #f47f17;
+  --color-bitcoin-light: #ffa552;
+  --color-bitcoin-dark: #c7630a;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #f7f7f8;
+  color: var(--color-ink);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+::selection {
+  background: var(--color-bitcoin);
+  color: white;
+}
+
+.grid-glow {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(244, 127, 23, 0.16), transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(244, 127, 23, 0.10), transparent 40%),
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: auto, auto, 42px 42px, 42px 42px;
+}

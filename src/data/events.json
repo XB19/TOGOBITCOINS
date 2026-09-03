@@ -1,5 +1,6 @@
 [
   {
+    "id": "formation-gratuite-bitcoin-vague-3",
     "title": "Formation gratuite Bitcoin — Vague 3",
     "date": "29 août, 5 & 12 sept. 2026",
     "time": "08h–12h",
@@ -10,6 +11,7 @@
     "image": "flyer-formation.jpg"
   },
   {
+    "id": "le-derby-digital",
     "title": "Le Derby Digital",
     "date": "22 août 2026",
     "time": "14h00 GMT",
@@ -20,6 +22,7 @@
     "image": "derby-banner.jpg"
   },
   {
+    "id": "bitcoin-dev-4",
     "title": "Bitcoin Dev #4",
     "date": "8 août 2026",
     "time": "08h00 UTC",
@@ -30,6 +33,7 @@
     "image": null
   },
   {
+    "id": "bitcoin-dev-3",
     "title": "Bitcoin Dev #3",
     "date": "11 juillet 2026",
     "time": "08h00 UTC",
@@ -40,6 +44,7 @@
     "image": "event-dev3.jpg"
   },
   {
+    "id": "bitcoin-mastermind-2026",
     "title": "Bitcoin Mastermind 2026",
     "date": "2 – 4 juillet 2026",
     "time": null,
@@ -50,6 +55,7 @@
     "image": "event-bmm.jpg"
   },
   {
+    "id": "bitcoin-dev-act-2",
     "title": "Bitcoin Dev Act #2",
     "date": "13 juin 2026",
     "time": "08h00 UTC",
@@ -60,6 +66,7 @@
     "image": "event-devact2.jpg"
   },
   {
+    "id": "formation-gratuite-bitcoin",
     "title": "Formation gratuite Bitcoin",
     "date": "Fin mai – 7 juin 2026",
     "time": null,
@@ -70,6 +77,7 @@
     "image": null
   },
   {
+    "id": "africa-bitcoin-day-bitcoin-festival",
     "title": "Africa Bitcoin Day — Bitcoin Festival",
     "date": "24 mai 2026",
     "time": null,
@@ -80,6 +88,7 @@
     "image": "africa-bitcoin-day.jpg"
   },
   {
+    "id": "premier-bitcoin-dev-meetup",
     "title": "Premier Bitcoin Dev MeetUp",
     "date": "10 mai 2026",
     "time": null,
@@ -90,6 +99,7 @@
     "image": "dev-meetup.jpg"
   },
   {
+    "id": "sat-on-the-road",
     "title": "SAT ON THE ROAD",
     "date": "14 avril 2026",
     "time": null,
@@ -100,6 +110,7 @@
     "image": "sat-on-the-road.jpg"
   },
   {
+    "id": "formation-pourquoi-le-bitcoin",
     "title": "Formation « Pourquoi le Bitcoin ? »",
     "date": "14 juin 2025",
     "time": null,
@@ -110,6 +121,7 @@
     "image": null
   },
   {
+    "id": "bitcoin-day",
     "title": "Bitcoin Day",
     "date": "31 mai 2025",
     "time": "14h00 GMT",
@@ -120,6 +132,7 @@
     "image": null
   },
   {
+    "id": "bitcoin-pizza-day",
     "title": "Bitcoin Pizza Day",
     "date": "22 mai 2025",
     "time": null,

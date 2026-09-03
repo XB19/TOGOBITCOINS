@@ -1,6 +1,22 @@
 [
-  { "name": "Africa Blockchain Community", "logo": "africa-blockchain.png" },
-  { "name": "Africa Bitcoin Conference", "logo": "africa-bitcoin-conference.png" },
-  { "name": "Fedi", "logo": "fedi.png" },
-  { "name": "Kisaw", "logo": "kisaw.png" }
+  {
+    "id": "africa-blockchain-community",
+    "name": "Africa Blockchain Community",
+    "logo": "africa-blockchain.png"
+  },
+  {
+    "id": "africa-bitcoin-conference",
+    "name": "Africa Bitcoin Conference",
+    "logo": "africa-bitcoin-conference.png"
+  },
+  {
+    "id": "fedi",
+    "name": "Fedi",
+    "logo": "fedi.png"
+  },
+  {
+    "id": "kisaw",
+    "name": "Kisaw",
+    "logo": "kisaw.png"
+  }
 ]
