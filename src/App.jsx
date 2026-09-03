@@ -58,7 +58,7 @@ export default function App() {
       <BackToTop />
 
       <a
-        href={whatsappLink}
+        href={whatsappLink} target="_blank" rel="noreferrer"
         aria-label="Rejoindre WhatsApp"
         className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-bitcoin text-white shadow-xl shadow-bitcoin/30 transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-bitcoin/50"
       >

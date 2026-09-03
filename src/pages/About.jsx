@@ -100,7 +100,7 @@ export default function About() {
             Bénéficiez d'une formation gratuite pour les débutants et rejoignez une communauté bienveillante.
           </p>
           <a
-            href={whatsappLink}
+            href={whatsappLink} target="_blank" rel="noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-bitcoin px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-bitcoin/25 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-bitcoin/40"
           >
             <FaWhatsapp size={18} />

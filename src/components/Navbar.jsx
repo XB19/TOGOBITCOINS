@@ -57,7 +57,7 @@ export default function Navbar() {
             </NavLink>
           ))}
           <a
-            href={whatsappLink}
+            href={whatsappLink} target="_blank" rel="noreferrer"
             className="ml-3 inline-flex items-center gap-2 rounded-full bg-bitcoin px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-bitcoin/25 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-bitcoin/40"
           >
             <FaWhatsapp size={16} />
@@ -95,7 +95,7 @@ export default function Navbar() {
             </NavLink>
           ))}
           <a
-            href={whatsappLink}
+            href={whatsappLink} target="_blank" rel="noreferrer"
             onClick={() => setOpen(false)}
             className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-bitcoin px-5 py-2.5 text-sm font-semibold text-white"
           >

@@ -3,7 +3,7 @@ import PageHero from '../components/PageHero'
 import Reveal from '../components/Reveal'
 import { events, whatsappLink } from '../data/content'
 import { FaWhatsapp } from 'react-icons/fa'
-import communitySpeaker from '../assets/community-speaker.jpg'
+import flyerFormation from '../assets/flyer-formation.jpg'
 
 const projects = [
   {
@@ -33,8 +33,8 @@ export default function Events() {
           <Reveal>
             <div className="sticky top-24 overflow-hidden rounded-3xl shadow-xl shadow-black/5">
               <img
-                src={communitySpeaker}
-                alt="Intervenant lors d'une formation Bitcoin de la communauté"
+                src={flyerFormation}
+                alt="Affiche officielle de la formation gratuite Bitcoin — Vague 3, avec Trezor Academy"
                 className="aspect-[4/5] w-full object-cover"
               />
             </div>
@@ -68,6 +68,16 @@ export default function Events() {
                     <FaMapMarkerAlt size={11} /> {event.place}
                   </p>
                   <p className="mt-3 leading-relaxed text-gray-600">{event.description}</p>
+                  {event.link && (
+                    <a
+                      href={event.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 inline-flex items-center gap-2 rounded-full bg-bitcoin/10 px-4 py-2 text-sm font-semibold text-bitcoin-dark transition-all duration-300 hover:bg-bitcoin hover:text-white"
+                    >
+                      S'inscrire sur Luma
+                    </a>
+                  )}
                 </div>
               </Reveal>
             ))}
@@ -111,7 +121,7 @@ export default function Events() {
             Rejoignez la communauté WhatsApp pour être informé de chaque meetup, formation et rencontre.
           </p>
           <a
-            href={whatsappLink}
+            href={whatsappLink} target="_blank" rel="noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-bitcoin px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-bitcoin/25 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-bitcoin/40"
           >
             <FaWhatsapp size={18} />

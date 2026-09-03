@@ -1,30 +1,22 @@
 export const events = [
   {
-    title: 'Bitcoin Day',
-    date: '31 mai 2025',
-    time: '14h00 GMT',
-    place: 'IPNET Togo',
-    theme: 'Bitcoin pour les devs & informaticiens',
-    description:
-      "Une rencontre dédiée aux développeurs et informaticiens togolais pour explorer le fonctionnement technique du Bitcoin et ses opportunités.",
-  },
-  {
-    title: 'Bitcoin Pizza Day',
-    date: '22 mai 2025',
-    time: null,
-    place: 'Lomé',
-    theme: 'Célébration historique',
-    description:
-      "Célébration d'un moment historique du Bitcoin, entre partage, pédagogie et bonne humeur au sein de la communauté.",
-  },
-  {
-    title: 'Formation « Pourquoi le Bitcoin ? »',
-    date: '14 juin 2025',
-    time: null,
-    place: 'En partenariat avec Trezor Academy',
+    title: 'Formation gratuite Bitcoin — Vague 3',
+    date: '29 août, 5 & 12 sept. 2026',
+    time: '08h–12h',
+    place: 'Centre Togo Bitcoin Community, Villa KISAW, Hedzranawoe',
     theme: 'Formation & sensibilisation',
     description:
-      "Séance de formation avec les membres de la communauté, en partenariat avec Trezor Academy — un échange passionnant sur ce sujet fondamental.",
+      "Trois matinées pour comprendre Bitcoin, pourquoi et comment l'utiliser, en partenariat avec Trezor Academy. La Session 1 a réuni les participants pour poser les bases et échanger — prochaine session le 5 septembre.",
+    link: 'https://luma.com/1oabzb4k',
+  },
+  {
+    title: 'Le Derby Digital',
+    date: '22 août 2026',
+    time: '14h00 GMT',
+    place: 'Stade Omnisport de Lomé',
+    theme: 'Sensibilisation & jeunesse',
+    description:
+      "Togo Bitcoin Community est allée à la rencontre de la jeunesse togolaise pour déconstruire les idées reçues sur Bitcoin, avec un challenge « Mon ticket Derby Digital » et des tickets bonus à la clé.",
   },
 ]
 
@@ -73,4 +65,7 @@ export const values = [
   },
 ]
 
-export const whatsappLink = '#contact'
+export const whatsappLink = 'https://chat.whatsapp.com/DGuyjFFrU1i5YUrWEBFpTY'
+export const xLink = 'https://x.com/Togo_Bitcoin'
+export const contactEmail = 'tgbitcoincom@gmail.com'
+export const location = 'Centre Togo Bitcoin Community, Villa KISAW — Hedzranawoe, Lomé'

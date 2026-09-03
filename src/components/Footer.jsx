@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom'
-import { FaWhatsapp, FaFacebookF, FaTwitter, FaTelegramPlane } from 'react-icons/fa'
-import { whatsappLink } from '../data/content'
+import { FaWhatsapp, FaEnvelope } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
+import { whatsappLink, xLink, contactEmail } from '../data/content'
 import logo from '../assets/logo.png'
 
 const socials = [
   { icon: FaWhatsapp, label: 'WhatsApp', href: whatsappLink },
-  { icon: FaFacebookF, label: 'Facebook', href: '#' },
-  { icon: FaTwitter, label: 'Twitter / X', href: '#' },
-  { icon: FaTelegramPlane, label: 'Telegram', href: '#' },
+  { icon: FaXTwitter, label: 'X (Twitter)', href: xLink },
+  { icon: FaEnvelope, label: 'Email', href: `mailto:${contactEmail}` },
 ]
 
 const links = [
@@ -34,6 +34,8 @@ export default function Footer() {
               <a
                 key={label}
                 href={href}
+                target={href.startsWith('http') ? '_blank' : undefined}
+                rel={href.startsWith('http') ? 'noreferrer' : undefined}
                 aria-label={label}
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-line text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-bitcoin hover:text-bitcoin hover:shadow-md hover:shadow-bitcoin/20"
               >
@@ -62,10 +64,10 @@ export default function Footer() {
         <div>
           <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white">Communauté</h4>
           <p className="mt-4 text-sm leading-relaxed text-gray-400">
-            Rejoignez notre communauté WhatsApp pour des échanges en temps réel et les dernières actualités Bitcoin.
+            Suivez-nous sur X pour les dernières actualités, ou rejoignez notre communauté WhatsApp.
           </p>
           <a
-            href={whatsappLink}
+            href={whatsappLink} target="_blank" rel="noreferrer"
             className="mt-4 inline-flex items-center gap-2 rounded-full bg-bitcoin/10 px-4 py-2 text-sm font-semibold text-bitcoin transition-all duration-300 hover:bg-bitcoin hover:text-white"
           >
             <FaWhatsapp /> Nous rejoindre

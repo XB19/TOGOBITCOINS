@@ -18,18 +18,21 @@ import { events, pillars, offerings, whatsappLink } from '../data/content'
 import communityPhones from '../assets/community-phones.jpg'
 import communityGroup from '../assets/community-group.jpg'
 import communitySpeaker from '../assets/community-speaker.jpg'
-import communityCake from '../assets/community-cake.jpg'
+import formationSession from '../assets/formation-session.jpg'
+import xBanner from '../assets/x-banner.jpg'
+import derbyDigital from '../assets/derby-digital.jpg'
+import flyerFormation from '../assets/flyer-formation.jpg'
 
 const pillarIcons = [FaGraduationCap, FaShieldAlt, FaCalendarAlt, FaChartLine]
 const offeringIcons = [FaWallet, FaChartLine, FaUnlockAlt]
 
-const partners = ['Trezor Academy', 'IPNET Togo', 'Communauté Bitcoin Afrique']
+const partners = ['Trezor Academy']
 
 const gallery = [
   { src: communityGroup, alt: 'Membres de Togo Bitcoin Community en t-shirt de la communauté' },
-  { src: communitySpeaker, alt: 'Intervenant lors d’une formation Bitcoin' },
-  { src: communityPhones, alt: 'Membres échangeant un paiement en Bitcoin sur smartphone' },
-  { src: communityCake, alt: 'Célébration Bitcoin Pizza Day aux couleurs de la communauté' },
+  { src: formationSession, alt: 'Session de formation Bitcoin avec Trezor Academy' },
+  { src: derbyDigital, alt: 'Togo Bitcoin Community au Derby Digital, Stade Omnisport de Lomé' },
+  { src: flyerFormation, alt: 'Affiche de la formation gratuite Bitcoin — Vague 3' },
 ]
 
 export default function Home() {
@@ -74,7 +77,7 @@ export default function Home() {
               className="mt-9 flex flex-wrap gap-4"
             >
               <a
-                href={whatsappLink}
+                href={whatsappLink} target="_blank" rel="noreferrer"
                 className="group inline-flex items-center gap-2 rounded-full bg-bitcoin px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-bitcoin/25 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-bitcoin/40"
               >
                 <FaWhatsapp size={18} />
@@ -109,6 +112,17 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
+      </section>
+
+      {/* X BANNER */}
+      <section className="bg-ink">
+        <Reveal>
+          <img
+            src={xBanner}
+            alt="Togo Bitcoin Community — Bitcoin is money. Apprendre, partager et construire l'avenir du Bitcoin."
+            className="max-h-80 w-full object-cover"
+          />
+        </Reveal>
       </section>
 
       {/* PILLARS */}
@@ -211,7 +225,7 @@ export default function Home() {
             </NavLink>
           </Reveal>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
             {events.map((event, i) => (
               <Reveal key={event.title} delay={i * 0.1}>
                 <div className="group h-full rounded-2xl border border-line bg-panel p-7 transition-all duration-300 hover:-translate-y-2 hover:border-bitcoin/50 hover:shadow-xl hover:shadow-bitcoin/10">
@@ -226,6 +240,17 @@ export default function Home() {
                     <FaMapMarkerAlt size={11} /> {event.place}
                   </p>
                   <p className="mt-3 text-sm leading-relaxed text-gray-400">{event.description}</p>
+                  {event.link && (
+                    <a
+                      href={event.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-bitcoin"
+                    >
+                      S'inscrire
+                      <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" size={12} />
+                    </a>
+                  )}
                 </div>
               </Reveal>
             ))}
@@ -282,7 +307,7 @@ export default function Home() {
                 Notre mission : démocratiser et vulgariser l'utilisation du Bitcoin au Togo.
               </h2>
               <a
-                href={whatsappLink}
+                href={whatsappLink} target="_blank" rel="noreferrer"
                 className="group mt-8 inline-flex items-center gap-2 rounded-full bg-ink px-7 py-3.5 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl"
               >
                 <FaWhatsapp size={18} />

@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import { FaWhatsapp, FaMapMarkerAlt, FaEnvelope, FaPaperPlane, FaCheckCircle } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6'
 import PageHero from '../components/PageHero'
 import Reveal from '../components/Reveal'
-import { whatsappLink } from '../data/content'
+import { whatsappLink, xLink, contactEmail, location } from '../data/content'
 import communityCake from '../assets/community-cake.jpg'
 
 export default function Contact() {
@@ -34,8 +35,21 @@ export default function Contact() {
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">
                   Le moyen le plus rapide de nous joindre et d'échanger avec toute la communauté en temps réel.
                 </p>
-                <a href={whatsappLink} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-bitcoin-dark">
+                <a href={whatsappLink} target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-bitcoin-dark">
                   Rejoindre le groupe <FaPaperPlane size={12} />
+                </a>
+              </div>
+
+              <div className="group rounded-2xl border border-gray-200 bg-gray-50 p-7 transition-all duration-300 hover:-translate-y-1 hover:border-bitcoin/50 hover:bg-white hover:shadow-lg hover:shadow-bitcoin/10">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-bitcoin/10 text-bitcoin-dark transition-all duration-300 group-hover:bg-bitcoin group-hover:text-white">
+                  <FaXTwitter size={20} />
+                </div>
+                <h3 className="mt-5 font-display text-lg font-semibold text-ink">Suivez-nous sur X</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">
+                  @Togo_Bitcoin — nos dernières actualités, formations et événements en direct.
+                </p>
+                <a href={xLink} target="_blank" rel="noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-bitcoin-dark">
+                  @Togo_Bitcoin <FaPaperPlane size={12} />
                 </a>
               </div>
 
@@ -50,9 +64,7 @@ export default function Contact() {
                     <FaMapMarkerAlt size={20} />
                   </div>
                   <h3 className="mt-5 font-display text-lg font-semibold text-ink">Basés au Togo</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-gray-600">
-                    Actifs à Lomé et dans les régions, au plus près des membres de la communauté.
-                  </p>
+                  <p className="mt-2 text-sm leading-relaxed text-gray-600">{location}</p>
                 </div>
               </div>
 
@@ -62,8 +74,11 @@ export default function Contact() {
                 </div>
                 <h3 className="mt-5 font-display text-lg font-semibold text-ink">Écrivez-nous</h3>
                 <p className="mt-2 text-sm leading-relaxed text-gray-600">
-                  Utilisez le formulaire ci-contre pour toute question ou proposition de partenariat.
+                  Pour toute question ou proposition de partenariat.
                 </p>
+                <a href={`mailto:${contactEmail}`} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-bitcoin-dark">
+                  {contactEmail}
+                </a>
               </div>
             </div>
           </Reveal>
