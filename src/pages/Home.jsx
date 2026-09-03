@@ -16,7 +16,7 @@ import {
 import Reveal from '../components/Reveal'
 import { events, pillars, offerings, whatsappLink } from '../data/content'
 import communityPhones from '../assets/community-phones.jpg'
-import communitySpeaker from '../assets/community-speaker.jpg'
+import communitySpeaker from '../assets/bitcoin-mastermind-presentation.jpg'
 import xBanner from '../assets/x-banner.jpg'
 import derbyDigital from '../assets/derby-banner.jpg'
 import africaBitcoinDay from '../assets/africa-bitcoin-day.jpg'
@@ -181,8 +181,8 @@ export default function Home() {
               <div className="overflow-hidden rounded-3xl shadow-xl shadow-black/5">
                 <img
                   src={communitySpeaker}
-                  alt="Formation Bitcoin animée par un membre de la communauté"
-                  className="aspect-[4/5] w-full object-cover transition-transform duration-500 hover:scale-105"
+                  alt="Togo Bitcoin Community présente l'adoption du Bitcoin au Togo au Bitcoin MasterMind"
+                  className="aspect-[4/5] w-full object-cover object-[90%_center] transition-transform duration-500 hover:scale-105"
                 />
               </div>
             </Reveal>
