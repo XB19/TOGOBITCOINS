@@ -228,30 +228,37 @@ export default function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-2">
             {events.slice(0, 2).map((event, i) => (
               <Reveal key={event.title} delay={i * 0.1}>
-                <div className="group h-full rounded-2xl border border-line bg-panel p-7 transition-all duration-300 hover:-translate-y-2 hover:border-bitcoin/50 hover:shadow-xl hover:shadow-bitcoin/10">
-                  <span className="inline-flex items-center gap-2 rounded-full bg-bitcoin/10 px-3 py-1 text-xs font-semibold text-bitcoin">
-                    <FaCalendarAlt size={11} />
-                    {event.date}
-                  </span>
-                  <h3 className="mt-4 font-display text-lg font-semibold text-white transition-colors group-hover:text-bitcoin">
-                    {event.title}
-                  </h3>
-                  <p className="mt-2 flex items-center gap-1.5 text-xs text-gray-500">
-                    <FaMapMarkerAlt size={11} /> {event.place}
-                  </p>
-                  <p className="mt-3 text-sm leading-relaxed text-gray-400">{event.description}</p>
-                  {event.link && (
-                    <a
-                      href={event.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-bitcoin"
-                    >
-                      S'inscrire
-                      <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" size={12} />
-                    </a>
+                <NavLink
+                  to="/evenements"
+                  className="group block h-full overflow-hidden rounded-2xl border border-line bg-panel transition-all duration-300 hover:-translate-y-2 hover:border-bitcoin/50 hover:shadow-xl hover:shadow-bitcoin/10"
+                >
+                  {event.image && (
+                    <div className="aspect-[16/9] w-full overflow-hidden">
+                      <img
+                        src={event.image}
+                        alt={event.title}
+                        className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                    </div>
                   )}
-                </div>
+                  <div className="p-7">
+                    <span className="inline-flex items-center gap-2 rounded-full bg-bitcoin/10 px-3 py-1 text-xs font-semibold text-bitcoin">
+                      <FaCalendarAlt size={11} />
+                      {event.date}
+                    </span>
+                    <h3 className="mt-4 font-display text-lg font-semibold text-white transition-colors group-hover:text-bitcoin">
+                      {event.title}
+                    </h3>
+                    <p className="mt-2 flex items-center gap-1.5 text-xs text-gray-500">
+                      <FaMapMarkerAlt size={11} /> {event.place}
+                    </p>
+                    <p className="mt-3 text-sm leading-relaxed text-gray-400">{event.description}</p>
+                    <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-bitcoin">
+                      Voir les détails
+                      <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" size={12} />
+                    </span>
+                  </div>
+                </NavLink>
               </Reveal>
             ))}
           </div>
