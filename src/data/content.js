@@ -204,3 +204,4 @@ export const xLink = 'https://x.com/Togo_Bitcoin'
 export const contactEmail = 'tgbitcoincom@gmail.com'
 export const contactEmails = ['togobitcoincommunity@gmail.com', 'info@togobitcoin.org']
 export const location = 'Centre Togo Bitcoin Community, Villa KISAW — Hedzranawoe, Lomé'
+export const phones = ['93 37 70 31', '91 05 61 74']

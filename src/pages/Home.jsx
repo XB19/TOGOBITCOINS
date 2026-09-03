@@ -12,9 +12,10 @@ import {
   FaQuoteLeft,
   FaArrowRight,
   FaMapMarkerAlt,
+  FaPhone,
 } from 'react-icons/fa'
 import Reveal from '../components/Reveal'
-import { events, pillars, offerings, partners, whatsappLink } from '../data/content'
+import { events, pillars, offerings, partners, whatsappLink, phones } from '../data/content'
 import communityPhones from '../assets/community-phones.jpg'
 import communitySpeaker from '../assets/bitcoin-mastermind-presentation.jpg'
 import xBanner from '../assets/x-banner.jpg'
@@ -322,6 +323,20 @@ export default function Home() {
                 <FaWhatsapp size={18} />
                 Rejoindre notre communauté WhatsApp
               </a>
+
+              <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-semibold text-ink/80">
+                <span>Ou appelez-nous :</span>
+                {phones.map((phone) => (
+                  <a
+                    key={phone}
+                    href={`tel:+228${phone.replace(/\s/g, '')}`}
+                    className="inline-flex items-center gap-1.5 transition-colors hover:text-ink"
+                  >
+                    <FaPhone size={12} />
+                    {phone}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </Reveal>

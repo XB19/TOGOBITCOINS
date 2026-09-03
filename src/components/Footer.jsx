@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
-import { FaWhatsapp, FaEnvelope } from 'react-icons/fa'
+import { FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
-import { whatsappLink, xLink, contactEmails } from '../data/content'
+import { whatsappLink, xLink, contactEmails, phones } from '../data/content'
 import logo from '../assets/logo.png'
 
 const socials = [
@@ -84,6 +84,17 @@ export default function Footer() {
                 >
                   <FaEnvelope size={13} className="flex-none" />
                   <span className="break-all">{email}</span>
+                </a>
+              </li>
+            ))}
+            {phones.map((phone) => (
+              <li key={phone}>
+                <a
+                  href={`tel:+228${phone.replace(/\s/g, '')}`}
+                  className="flex items-center gap-2 text-sm text-gray-400 transition-colors duration-200 hover:text-bitcoin"
+                >
+                  <FaPhone size={13} className="flex-none" />
+                  {phone}
                 </a>
               </li>
             ))}
