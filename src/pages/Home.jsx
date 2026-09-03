@@ -20,7 +20,7 @@ import communityGroup from '../assets/community-group.jpg'
 import communitySpeaker from '../assets/community-speaker.jpg'
 import formationSession from '../assets/formation-session.jpg'
 import xBanner from '../assets/x-banner.jpg'
-import derbyDigital from '../assets/derby-digital.jpg'
+import derbyDigital from '../assets/derby-banner.jpg'
 import flyerFormation from '../assets/flyer-formation.jpg'
 
 const pillarIcons = [FaGraduationCap, FaShieldAlt, FaCalendarAlt, FaChartLine]
