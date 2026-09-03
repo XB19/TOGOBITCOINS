@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import { FaBitcoin, FaLock } from 'react-icons/fa'
+import { FaLock } from 'react-icons/fa'
 import { useAuth } from '../lib/AuthContext'
 import { Button, Input } from '../components/ui'
+import logo from '../assets/logo.png'
 
 export default function Login() {
   const { login } = useAuth()
@@ -26,9 +27,9 @@ export default function Login() {
     <div className="grid-glow flex min-h-screen items-center justify-center bg-ink px-5">
       <div className="w-full max-w-sm rounded-2xl border border-white/10 bg-panel p-8 shadow-2xl">
         <div className="flex justify-center">
-          <span className="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-bitcoin-light to-bitcoin-dark shadow-lg shadow-bitcoin/30">
-            <FaBitcoin size={26} className="text-white" />
-          </span>
+          <div className="rounded-2xl bg-white p-3 shadow-lg shadow-bitcoin/20">
+            <img src={logo} alt="Togo Bitcoin Community" className="h-12 w-auto object-contain" />
+          </div>
         </div>
         <h1 className="mt-5 text-center font-display text-xl font-bold text-white">Togo Bitcoin Community</h1>
         <p className="mt-1 text-center text-sm text-gray-400">Tableau de bord administrateur</p>

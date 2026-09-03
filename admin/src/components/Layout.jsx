@@ -1,6 +1,7 @@
 import { NavLink, Outlet } from 'react-router-dom'
 import { FaCalendarAlt, FaHandshake, FaFileAlt, FaAddressCard, FaSignOutAlt, FaBitcoin, FaExternalLinkAlt } from 'react-icons/fa'
 import { useAuth } from '../lib/AuthContext'
+import logo from '../assets/logo.png'
 
 const nav = [
   { to: '/', label: 'Vue d’ensemble', icon: FaBitcoin, end: true },
@@ -17,9 +18,9 @@ export default function Layout() {
     <div className="flex min-h-screen bg-[#f7f7f8]">
       <aside className="flex w-64 flex-none flex-col border-r border-gray-200 bg-ink text-white">
         <div className="flex items-center gap-2.5 border-b border-white/10 px-6 py-5">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-bitcoin-light to-bitcoin-dark">
-            <FaBitcoin size={18} />
-          </span>
+          <div className="rounded-lg bg-white p-1.5 shadow-sm">
+            <img src={logo} alt="Togo Bitcoin Community" className="h-7 w-auto object-contain" />
+          </div>
           <div>
             <p className="font-display text-sm font-bold leading-tight">Togo Bitcoin</p>
             <p className="text-[11px] uppercase tracking-widest text-bitcoin">Admin</p>
