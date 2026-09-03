@@ -19,10 +19,10 @@ import { events, pillars, offerings, partners, whatsappLink, phones } from '../d
 import communityPhones from '../assets/community-phones.jpg'
 import communitySpeaker from '../assets/bitcoin-mastermind-presentation.jpg'
 import xBanner from '../assets/x-banner.jpg'
-import derbyDigital from '../assets/derby-banner.jpg'
-import africaBitcoinDay from '../assets/africa-bitcoin-day.jpg'
-import satOnTheRoad from '../assets/sat-on-the-road.jpg'
-import devMeetup from '../assets/dev-meetup.jpg'
+import derbyDigital from '../assets/events/derby-banner.jpg'
+import africaBitcoinDay from '../assets/events/africa-bitcoin-day.jpg'
+import satOnTheRoad from '../assets/events/sat-on-the-road.jpg'
+import devMeetup from '../assets/events/dev-meetup.jpg'
 
 const pillarIcons = [FaGraduationCap, FaShieldAlt, FaCalendarAlt, FaChartLine]
 const offeringIcons = [FaWallet, FaChartLine, FaUnlockAlt]

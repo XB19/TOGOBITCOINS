@@ -1,7 +1,7 @@
 import { FaBullseye, FaEye, FaHandshake, FaShieldAlt, FaWhatsapp } from 'react-icons/fa'
 import PageHero from '../components/PageHero'
 import Reveal from '../components/Reveal'
-import { values, whatsappLink } from '../data/content'
+import { values, whatsappLink, about } from '../data/content'
 import communityGroup from '../assets/community-group.jpg'
 import communityCake from '../assets/community-cake.jpg'
 
@@ -35,12 +35,8 @@ export default function About() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-bitcoin/10 text-bitcoin-dark">
                   <FaBullseye size={20} />
                 </div>
-                <h2 className="mt-6 font-display text-2xl font-bold text-ink">Notre conviction</h2>
-                <p className="mt-4 leading-relaxed text-gray-600">
-                  Nous croyons que l'argent est essentiel pour que chacun puisse réaliser son plein potentiel. Le
-                  Bitcoin représente, selon nous, la seule monnaie libre et équitable au monde — et une adoption
-                  africaine pourrait contribuer à réduire les inégalités monétaires globales.
-                </p>
+                <h2 className="mt-6 font-display text-2xl font-bold text-ink">{about.conviction.title}</h2>
+                <p className="mt-4 leading-relaxed text-gray-600">{about.conviction.text}</p>
               </div>
             </Reveal>
 
@@ -49,11 +45,8 @@ export default function About() {
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-bitcoin/10 text-bitcoin-dark">
                   <FaEye size={20} />
                 </div>
-                <h2 className="mt-6 font-display text-2xl font-bold text-ink">Notre vision</h2>
-                <p className="mt-4 leading-relaxed text-gray-600">
-                  Vulgariser l'utilisation du Bitcoin dans tous les coins et recoins du Togo — en rendant
-                  l'éducation accessible, la sécurité prioritaire, et l'accompagnement gratuit pour les débutants.
-                </p>
+                <h2 className="mt-6 font-display text-2xl font-bold text-ink">{about.vision.title}</h2>
+                <p className="mt-4 leading-relaxed text-gray-600">{about.vision.text}</p>
               </div>
             </Reveal>
           </div>
