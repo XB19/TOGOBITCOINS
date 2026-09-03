@@ -45,17 +45,6 @@ export default function Dashboard() {
           </Link>
         ))}
       </div>
-
-      <Card className="mt-6 p-6">
-        <h2 className="font-display text-base font-semibold text-ink">Comment publier vos changements</h2>
-        <ol className="mt-3 list-decimal space-y-1.5 pl-5 text-sm leading-relaxed text-gray-600">
-          <li>Faites vos modifications ici — elles sont enregistrées immédiatement dans le projet.</li>
-          <li>
-            Dans un terminal, à la racine du projet : <code className="rounded bg-gray-100 px-1.5 py-0.5">git add -A &amp;&amp; git commit -m "mise à jour du contenu" &amp;&amp; git push</code>
-          </li>
-          <li>Vercel redéploie automatiquement le site avec vos changements en quelques minutes.</li>
-        </ol>
-      </Card>
     </div>
   )
 }
