@@ -202,4 +202,5 @@ export const values = [
 export const whatsappLink = 'https://chat.whatsapp.com/DGuyjFFrU1i5YUrWEBFpTY'
 export const xLink = 'https://x.com/Togo_Bitcoin'
 export const contactEmail = 'tgbitcoincom@gmail.com'
+export const contactEmails = ['togobitcoincommunity@gmail.com', 'info@togobitcoin.org']
 export const location = 'Centre Togo Bitcoin Community, Villa KISAW — Hedzranawoe, Lomé'

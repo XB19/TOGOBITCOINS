@@ -1,13 +1,12 @@
 import { NavLink } from 'react-router-dom'
 import { FaWhatsapp, FaEnvelope } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
-import { whatsappLink, xLink, contactEmail } from '../data/content'
+import { whatsappLink, xLink, contactEmails } from '../data/content'
 import logo from '../assets/logo.png'
 
 const socials = [
   { icon: FaWhatsapp, label: 'WhatsApp', href: whatsappLink },
   { icon: FaXTwitter, label: 'X (Twitter)', href: xLink },
-  { icon: FaEnvelope, label: 'Email', href: `mailto:${contactEmail}` },
 ]
 
 const links = [
@@ -20,7 +19,7 @@ const links = [
 export default function Footer() {
   return (
     <footer className="border-t border-line bg-ink-soft">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.3fr_1fr_1fr]">
+      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:grid-cols-2 lg:grid-cols-[1.2fr_0.8fr_0.9fr_1.1fr]">
         <div>
           <div className="inline-flex rounded-xl bg-white px-3 py-2 shadow-sm">
             <img src={logo} alt="Togo Bitcoin Community" className="h-10 w-auto object-contain" />
@@ -72,6 +71,23 @@ export default function Footer() {
           >
             <FaWhatsapp /> Nous rejoindre
           </a>
+        </div>
+
+        <div>
+          <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white">Contact</h4>
+          <ul className="mt-4 space-y-2.5">
+            {contactEmails.map((email) => (
+              <li key={email}>
+                <a
+                  href={`mailto:${email}`}
+                  className="flex items-center gap-2 text-sm text-gray-400 transition-colors duration-200 hover:text-bitcoin"
+                >
+                  <FaEnvelope size={13} className="flex-none" />
+                  <span className="break-all">{email}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
