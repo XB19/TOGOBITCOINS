@@ -16,12 +16,12 @@ import {
 import Reveal from '../components/Reveal'
 import { events, pillars, offerings, whatsappLink } from '../data/content'
 import communityPhones from '../assets/community-phones.jpg'
-import communityGroup from '../assets/community-group.jpg'
 import communitySpeaker from '../assets/community-speaker.jpg'
-import formationSession from '../assets/formation-session.jpg'
 import xBanner from '../assets/x-banner.jpg'
 import derbyDigital from '../assets/derby-banner.jpg'
-import flyerFormation from '../assets/flyer-formation.jpg'
+import africaBitcoinDay from '../assets/africa-bitcoin-day.jpg'
+import satOnTheRoad from '../assets/sat-on-the-road.jpg'
+import devMeetup from '../assets/dev-meetup.jpg'
 
 const pillarIcons = [FaGraduationCap, FaShieldAlt, FaCalendarAlt, FaChartLine]
 const offeringIcons = [FaWallet, FaChartLine, FaUnlockAlt]
@@ -29,10 +29,10 @@ const offeringIcons = [FaWallet, FaChartLine, FaUnlockAlt]
 const partners = ['Trezor Academy']
 
 const gallery = [
-  { src: communityGroup, alt: 'Membres de Togo Bitcoin Community en t-shirt de la communauté' },
-  { src: formationSession, alt: 'Session de formation Bitcoin avec Trezor Academy' },
+  { src: africaBitcoinDay, alt: 'Africa Bitcoin Day — premier Bitcoin Festival togolais' },
+  { src: satOnTheRoad, alt: 'La caravane SAT ON THE ROAD de passage au Togo' },
+  { src: devMeetup, alt: 'Bitcoin Dev MeetUp de la communauté' },
   { src: derbyDigital, alt: 'Togo Bitcoin Community au Derby Digital, Stade Omnisport de Lomé' },
-  { src: flyerFormation, alt: 'Affiche de la formation gratuite Bitcoin — Vague 3' },
 ]
 
 export default function Home() {

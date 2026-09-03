@@ -16,7 +16,79 @@ export const events = [
     place: 'Stade Omnisport de Lomé',
     theme: 'Sensibilisation & jeunesse',
     description:
-      "Togo Bitcoin Community est allée à la rencontre de la jeunesse togolaise pour déconstruire les idées reçues sur Bitcoin, avec un challenge « Mon ticket Derby Digital » et des tickets bonus à la clé.",
+      "Togo Bitcoin Community, partenaire officiel de l'édition 2026, est allée à la rencontre de la jeunesse togolaise pour déconstruire les idées reçues sur Bitcoin, avec un stand et un challenge « Mon ticket Derby Digital » (10 tickets à gagner).",
+  },
+  {
+    title: 'Bitcoin Dev #4',
+    date: '8 août 2026',
+    time: '08h00 UTC',
+    place: 'Centre Togo Bitcoin Community, Villa KISAW, Hedzranawoe',
+    theme: 'Bitcoin pour les devs',
+    description:
+      "Après les bases de Linux, une session pratique pour découvrir comment Linux est utilisé pour contribuer à l'écosystème Bitcoin — ouverte aux débutants comme aux passionnés.",
+  },
+  {
+    title: 'Bitcoin Dev #3',
+    date: '11 juillet 2026',
+    time: '08h00 UTC',
+    place: 'Centre Togo Bitcoin Community, Villa KISAW, Hedzranawoe',
+    theme: 'Bitcoin pour les devs',
+    description:
+      "Les participants ont découvert les bases de Linux et pourquoi il est un outil incontournable pour développer sur Bitcoin.",
+  },
+  {
+    title: 'Bitcoin Mastermind 2026',
+    date: '2 – 4 juillet 2026',
+    time: null,
+    place: 'Première conférence Bitcoin d’Afrique francophone',
+    theme: 'Conférence régionale',
+    description:
+      "La délégation de Togo Bitcoin Community a pris part à cette conférence panafricaine : souveraineté monétaire, adoption réelle du Bitcoin au Togo, place des femmes dans Bitcoin, et opportunités de carrière liées à l'économie numérique.",
+  },
+  {
+    title: 'Bitcoin Dev Act #2',
+    date: '13 juin 2026',
+    time: '08h00 UTC',
+    place: 'Centre Togo Bitcoin Community, Villa KISAW, Hedzranawoe',
+    theme: 'Bitcoin pour les devs',
+    description:
+      "« Devenir un pionnier du Bitcoin au Togo » — une session ouverte aux développeurs, étudiants et passionnés de technologie pour échanger, apprendre et construire sur Bitcoin.",
+  },
+  {
+    title: 'Formation gratuite Bitcoin',
+    date: 'Fin mai – 7 juin 2026',
+    time: null,
+    place: 'Centre Togo Bitcoin Community, Villa KISAW, Hedzranawoe',
+    theme: 'Formation & sensibilisation',
+    description:
+      "Deux journées de formation en présentiel en partenariat avec Trezor Academy, jusqu'à une session finale sur « que doivent faire les Bitcoiners ? » — le début d'un nouveau chapitre pour les participants.",
+  },
+  {
+    title: 'Africa Bitcoin Day — Bitcoin Festival',
+    date: '24 mai 2026',
+    time: null,
+    place: 'Lomé',
+    theme: 'Festival communautaire',
+    description:
+      "Le premier Bitcoin Festival togolais de la communauté : éducation, paiements en Bitcoin, activités et rencontres entre passionnés, curieux, jeunes et entrepreneurs — une journée mémorable pour le mouvement Bitcoin au Togo.",
+  },
+  {
+    title: 'Premier Bitcoin Dev MeetUp',
+    date: '10 mai 2026',
+    time: null,
+    place: 'Centre Togo Bitcoin Community, Villa KISAW, Hedzranawoe',
+    theme: 'Bitcoin pour les devs',
+    description:
+      "Le tout premier Bitcoin Dev MeetUp de la communauté, réunissant développeurs, étudiants et passionnés de technologie autour d'un moment d'apprentissage et d'échanges sur Bitcoin.",
+  },
+  {
+    title: 'SAT ON THE ROAD',
+    date: '14 avril 2026',
+    time: null,
+    place: 'Togo',
+    theme: 'Caravane de sensibilisation',
+    description:
+      "Togo Bitcoin Community a accueilli SAT ON THE ROAD, une caravane dédiée à la sensibilisation au Bitcoin, pour une journée d'échanges, d'apprentissage et de partage.",
   },
   {
     title: 'Formation « Pourquoi le Bitcoin ? »',
