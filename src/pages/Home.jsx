@@ -226,7 +226,7 @@ export default function Home() {
           </Reveal>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2">
-            {events.map((event, i) => (
+            {events.slice(0, 2).map((event, i) => (
               <Reveal key={event.title} delay={i * 0.1}>
                 <div className="group h-full rounded-2xl border border-line bg-panel p-7 transition-all duration-300 hover:-translate-y-2 hover:border-bitcoin/50 hover:shadow-xl hover:shadow-bitcoin/10">
                   <span className="inline-flex items-center gap-2 rounded-full bg-bitcoin/10 px-3 py-1 text-xs font-semibold text-bitcoin">

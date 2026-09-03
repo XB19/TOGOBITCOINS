@@ -18,6 +18,33 @@ export const events = [
     description:
       "Togo Bitcoin Community est allée à la rencontre de la jeunesse togolaise pour déconstruire les idées reçues sur Bitcoin, avec un challenge « Mon ticket Derby Digital » et des tickets bonus à la clé.",
   },
+  {
+    title: 'Formation « Pourquoi le Bitcoin ? »',
+    date: '14 juin 2025',
+    time: null,
+    place: 'En partenariat avec Trezor Academy',
+    theme: 'Formation & sensibilisation',
+    description:
+      "Séance de formation avec les membres de la communauté, en partenariat avec Trezor Academy — un échange passionnant sur ce sujet fondamental.",
+  },
+  {
+    title: 'Bitcoin Day',
+    date: '31 mai 2025',
+    time: '14h00 GMT',
+    place: 'IPNET Togo',
+    theme: 'Bitcoin pour les devs & informaticiens',
+    description:
+      "Une rencontre dédiée aux développeurs et informaticiens togolais pour explorer le fonctionnement technique du Bitcoin et ses opportunités.",
+  },
+  {
+    title: 'Bitcoin Pizza Day',
+    date: '22 mai 2025',
+    time: null,
+    place: 'Lomé',
+    theme: 'Célébration historique',
+    description:
+      "Célébration d'un moment historique du Bitcoin, entre partage, pédagogie et bonne humeur au sein de la communauté.",
+  },
 ]
 
 export const pillars = [
